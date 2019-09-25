@@ -1,21 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing';
 import { LoginComponent } from './login/login.component';
 import { ThemeComponent } from './theme/theme.component';
-import { UsersComponent } from './pages/administration/users/users.component';
+import { BibliotecaModule } from './pages/biblioteca/biblioteca.module';
+import { AdministrationModule } from './pages/administration/administration.module';
+import { SettingsModule } from './pages/settings/settings.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-     ThemeComponent,
-     UsersComponent
+    ThemeComponent
   ],
   imports: [
-    BrowserModule,AppRoutingModule
+    BrowserModule,
+    AppRoutingModule,
+    BibliotecaModule,
+    AdministrationModule,
+    SettingsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

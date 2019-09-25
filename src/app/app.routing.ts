@@ -2,13 +2,6 @@ import { NgModule } from "@angular/core";
 import {Routes,RouterModule, Router} from "@angular/router";
 import { LoginComponent } from './login/login.component';
 import { ThemeComponent } from './theme/theme.component';
-import { UsersComponent } from './pages/administration/users/users.component';
-import { RolesComponent } from './pages/administration/roles/roles.component';
-import { CategoriesComponent } from './pages/settings/categories/categories.component';
-import { AuthorsComponent } from './pages/settings/authors/authors.component';
-import { AreasComponent } from './pages/settings/areas/areas.component';
-import { SectionsComponent } from './pages/settings/sections/sections.component';
-import { BooksComponent } from './pages/settings/books/books.component';
 export const routes: Routes=[{
     path  : 'login',    
     component : LoginComponent
@@ -18,39 +11,22 @@ export const routes: Routes=[{
     component: ThemeComponent,
     children: [
         {
+            path: 'biblioteca',
+            loadChildren: './pages/biblioteca/biblioteca.module#BibliotecaModule'
+        },
+        {
+            path: 'administracion',
+            loadChildren: './pages/administration/administration.module#AdministrationModule'
+        },
+        {
+            path: 'settings',
+            loadChildren: './pages/settings/settings.module#SettingsModule'
+        },
+        {
             path: '',
             loadChildren:'./pages/dashboard/dashboard.module#DashboardModule'
         },
-        {
-            path:'',
-            loadChildren: 'pages/users/',
-            component: UsersComponent
-        },
-        {
-            path:'roles',
-            loadChildren:'',
-            component: RolesComponent
-        },
-        {
-            path:'categories',
-            component: CategoriesComponent
-        },
-        {
-            path:'authors',
-            component: AuthorsComponent
-        },
-        {
-            path:'areas',
-            component: AreasComponent
-        },
-        {
-            path:'sections',
-            component: SectionsComponent
-        },
-        {
-            path:'books',
-            component: BooksComponent
-        },
+        
     ]
 
 }
