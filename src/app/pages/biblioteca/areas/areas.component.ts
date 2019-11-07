@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class AreasComponent implements OnInit {
   public show: boolean;
   public text: string = 'abrir';
+  public titulo = "Formulario de Areas";
+  public nombres: String;
+  public apellidos: string;
+  public fec_nac: string;
+  public nacionalidad: string;bloc
 
   constructor() {
     this.show = false;

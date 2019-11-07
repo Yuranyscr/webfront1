@@ -8,6 +8,7 @@ import { TipoComponent } from './tipo/tipo.component';
 import { AreasComponent } from './areas/areas.component';
 import { LibroComponent } from './libro/libro.component';
 import { ExistenciaComponent } from './existencia/existencia.component';
+import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -23,7 +24,9 @@ import { ExistenciaComponent } from './existencia/existencia.component';
   ],
   imports: [
     CommonModule,
-    BibliotecaRoutingModule
+    BibliotecaRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class BibliotecaModule { }

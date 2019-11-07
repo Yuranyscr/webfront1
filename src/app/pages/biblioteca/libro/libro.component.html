@@ -1,1 +1,25 @@
-<p>libro works!</p>
+<header>{{titulo}}</header>
+
+<form>
+    <b> Libro:</b> 
+    <br>
+    <input type="text" [(ngModel)]="Libro" name="Libro" />
+    <br>
+    <br>
+    <b> Clasificacion: {{Clasificacion}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="Clasificacion" name="Clasificacion" />
+    <br>
+    <br>
+    <b> Folio: {{Folio}}</b> 
+    <br>
+    <input type="date" [(ngModel)]="Folio" name="Folio" />
+    <br>
+    <br>
+    <b> Edicion: {{Edicion}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="Edicion" name="Edicion" />
+    <br>
+    <br>
+    <button type="button" class="btn btn-success" (click)="SaveForm()">Enviar </button> 
+</form>

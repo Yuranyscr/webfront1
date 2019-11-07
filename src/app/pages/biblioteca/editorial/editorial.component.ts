@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./editorial.component.css']
 })
 export class EditorialComponent implements OnInit {
+  public titulo = "Formulario Editorial";
+  public id_edi: String;
+  public lugar: string;
+  public fec_edi: string;
+  public pais: string;bloc
 
   constructor() { }
 
   ngOnInit() {
+  }
+  SaveForm (){
+    
   }
 
 }

@@ -1,1 +1,21 @@
-<p>existencia works!</p>
+<header>{{titulo}}</header>
+
+<form>
+    <b> Id_Existencia:</b> 
+    <br>
+    <input type="text" [(ngModel)]="Id_Existencia" name="Id_Existencia" />
+    <br>
+    <br>
+    <b> Nombre: {{Nombre}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="Nombre" name="Nombre" />
+    <br>
+    <br>
+    <b> Descripcion: {{Descripcion}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="Descripcion" name="Descripcion" />
+    <br>
+    <br>
+    <button type="button" class="btn btn-success" (click)="SaveForm()">Enviar </button> 
+</form>
+

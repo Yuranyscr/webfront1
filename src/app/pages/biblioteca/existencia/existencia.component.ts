@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./existencia.component.css']
 })
 export class ExistenciaComponent implements OnInit {
+  public titulo = "Formulario de Existencias";
+  public Ide_Nombre: String;
+  public Nombre: string;
+  public Descripcion: string;
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  SaveForm (){
+    
+  }
 }

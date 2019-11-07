@@ -1,1 +1,20 @@
-<p>tipo works!</p>
+<header>{{titulo}}</header>
+
+<form>
+    <b> codigo:</b> 
+    <br>
+    <input type="text" [(ngModel)]="codigo" name="codigo" />
+    <br>
+    <br>
+    <b> Nombre: {{Nombre}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="Nombre" name="Nombre" />
+    <br>
+    <br>
+    <b> Referencia: {{Referencia}}</b> 
+    <br>
+    <input type="date" [(ngModel)]="Referencia" name="Referencia" />
+    <br>
+    <br>
+    <button type="button" class="btn btn-success" (click)="SaveForm()">Enviar </button> 
+</form>

@@ -1,1 +1,26 @@
-<p>editorial works!</p>
+<header>{{titulo}}</header>
+
+<form>
+    <b> id_edi:</b> 
+    <br>
+    <input type="text" [(ngModel)]="id_edi" name="id_edi" />
+    <br>
+    <br>
+    <b> Lugar: {{lugar}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="Lugar" name="lugar" />
+    <br>
+    <br>
+    <b> Fecha: {{fec_edi}}</b> 
+    <br>
+    <input type="date" [(ngModel)]="fec_edi" name="fec_edi" />
+    <br>
+    <br>
+    <b> Pais: {{Pais}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="Pais" name="Pais" />
+    <br>
+    <br>
+    <button type="button" class="btn btn-success" (click)="SaveForm()">Enviar </button> 
+</form>
+
